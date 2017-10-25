@@ -1,0 +1,8 @@
+------tpl_info------------
+tpl name£ºÄ§¿âÍêÕû°æ
+tpl url£º
+description£º
+version£ºv1.0
+author£ºjames
+author_uri£º
+------tpl_info------------
