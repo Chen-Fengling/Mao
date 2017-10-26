@@ -4,8 +4,10 @@
         <div class="form-row">
             <div class="form-label"><span class="red">*</span>{$lang.Consignee}：</div>
             <div class="form-value">
-                <input type="text" class="form-input" value="{$consignee.consignee}" maxlength="20" name="consignee" id="consignee_name">
-                <span id="consigneeNameNote" class="status error hide">{$lang.input_Consignee_name}</span>
+                <input type="text" class="form-input" value="{$consignee.consignee}" maxlength="8" name="consignee" id="consignee_name" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')">
+                <span class="fl">{$lang.consignee_IDCard_Number}：</span>
+                <input type="text" class="form-input" maxlength="18" value="{$consignee.IDCard}" name="IDCard" id="consignee_IDCard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+                <span id="consigneeIdCardlNote" class="status error hide">{$lang.input_IDCard}</span>
             </div>
         </div>
         <div class="form-row">
@@ -110,13 +112,6 @@
             <div class="form-label">{$lang.con_sign_building}：</div>
             <div class="form-value"><input type="text" class="form-input fl" value="{$consignee.sign_building}" name="sign_building" id="consignee_sign_building"><div class="notic">{$lang.sign_building_desc}&nbsp;&nbsp;</div></div>
             <span id="consigneeAliasNote" class="status error hide">{$lang.inputcon_sign_building}</span>
-        </div>
-        <div class="form-row">
-            <div class="form-label">{$lang.deliver_goods_time}：</div>
-            <div class="form-value">
-                <input type="text" class="form-input" value="{$consignee.best_time}" name="best_time" id="consignee_best_time">
-                <span id="consigneeBestTimeNote" class="status error"></span>
-            </div>
         </div>
         {/if}
         

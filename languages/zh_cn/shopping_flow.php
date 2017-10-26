@@ -126,6 +126,7 @@ $_LANG['flow_js']['mobile_invaild'] = '手机号码不是合法号码';
 $_LANG['new_consignee_address'] = '新收货地址';
 $_LANG['consignee_address'] = '收货地址';
 $_LANG['consignee_name'] = '收货人姓名';
+$_LANG['consignee_IDCard_Number'] = '身份证号码';
 $_LANG['country_province'] = '配送区域';
 $_LANG['please_select'] = '请选择';
 $_LANG['city_district'] = '城市/地区';

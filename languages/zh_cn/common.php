@@ -1073,6 +1073,7 @@ $_LANG['input_address_info'] = "请您填写收货详细地址";
 $_LANG['phone_con'] = "手机号码";
 $_LANG['Fixed_telephone'] = "固定电话";
 $_LANG['input_contact'] = "请您填写收货人联系方式";
+$_LANG['input_IDCard'] = "请您填写收货人身份证号码";
 $_LANG['con_email'] = "邮箱";
 $_LANG['con_email_input'] = "请您填写邮箱";
 $_LANG['con_sign_building'] = '地址别名';
