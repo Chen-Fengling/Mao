@@ -24,6 +24,9 @@
                                         <div class="label">{$lang.require_field}&nbsp;{$lang.consignee_name}：</div>
                                         <div class="value">
                                             <input type="text" class="text" name="consignee"  value="{$consignee.consignee|escape}" autocomplete="off" />
+                                            <span class="fl">{$lang.consignee_IDCard_Number}：</span>
+                                             <input type="text" class="form-input" maxlength="18" value="{$consignee.IDCard}" name="IDCard" id="consignee_IDCard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+                                             <span id="consigneeIdCardlNote" class="status error hide">{$lang.input_IDCard}</span>
                                             <div class="form_prompt"></div>
                                         </div>
                                     </div>

@@ -33,6 +33,7 @@ $_LANG['user_name'] = '会员名称';
 $_LANG['phone'] = '手机';
 $_LANG['telephone'] = '电话';
 $_LANG['email'] = '电子邮件';
+$_LANG['IDCard'] = '身份证号码';
 $_LANG['postcode'] = '邮政编码';
 $_LANG['landmark_building'] = '标志建筑';
 $_LANG['optimum_delivery_time'] = '最佳送货时间';

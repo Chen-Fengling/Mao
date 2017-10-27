@@ -157,6 +157,8 @@
                                     <dd>{if $order.tel}{$order.tel}{else}{$lang.wu}{/if}</dd>
                                     <dt>{$lang.label_mobile}</dt>
                                     <dd>{if $order.mobile}{$order.mobile|escape}{else}{$lang.wu}{/if}</dd>
+                                    <dt>{$lang.IDCard}</dt>
+                                    <dd>{if $order.IDCard}{$order.IDCard|escape}{else}{$lang.wu}{/if}</dd>
                                 </dl>
                                 <dl>
                                     <dt>{$lang.label_best_time}</dt>
