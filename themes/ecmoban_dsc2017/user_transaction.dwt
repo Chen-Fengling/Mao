@@ -2865,7 +2865,11 @@
                 <form action="user.php" method="post" class="user-form" name="theForm" onsubmit="return checkConsignee(this)">
                     <div class="form-row">
                         <div class="form-label"><span class="red">*</span>{$lang.consignee}：</div>
-                        <div class="form-value"><input type="text" name="consignee" value="{$consignee.consignee}" class="form-input"></div>
+                        <div class="form-value"><input type="text" name="consignee" value="{$consignee.consignee}" class="form-input" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')"></div>
+                           <span class="fl">身份证号码：</span>
+                         <input type="text" class="form-input" maxlength="18" value="{$consignee.idcard}" name="idcard" id="consignee_IDCard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+                         <span id="consigneeIdCardlNote" class="status error hide"><?php echo $this->_var['lang']['input_IDCard']; ?></span>
+
                     </div>
                     <div class="form-row">
                         <div class="form-label"><span class="red">*</span>{$lang.label_mobile}：</div>

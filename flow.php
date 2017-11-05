@@ -4882,10 +4882,15 @@ else if ($_REQUEST['step'] == 'insert_Consignee') {
 	$json = new JSON();
 	$result = array('message' => '', 'result' => '', 'error' => 0);
 	$_REQUEST['csg'] = isset($_REQUEST['csg']) ? json_str_iconv($_REQUEST['csg']) : '';
-	$csg = $json->decode($_REQUEST['csg']);
-	$consignee = array('address_id' => empty($csg->address_id) ? 0 : intval($csg->address_id), 'consignee' => empty($csg->consignee) ? '' : compile_str(trim($csg->consignee)), 'country' => empty($csg->country) ? 0 : intval($csg->country), 'province' => empty($csg->province) ? 0 : intval($csg->province), 'city' => empty($csg->city) ? 0 : intval($csg->city), 'district' => empty($csg->district) ? 0 : intval($csg->district), 'street' => empty($csg->street) ? 0 : intval($csg->street), 'email' => empty($csg->email) ? '' : compile_str($csg->email), 'address' => empty($csg->address) ? '' : compile_str($csg->address), 'zipcode' => empty($csg->zipcode) ? '' : compile_str(make_semiangle(trim($csg->zipcode))), 'tel' => empty($csg->tel) ? '' : compile_str(make_semiangle(trim($csg->tel))), 'mobile' => empty($csg->mobile) ? '' : compile_str(make_semiangle(trim($csg->mobile))), 'sign_building' => empty($csg->sign_building) ? '' : compile_str($csg->sign_building), 'userUp_time' => $time, 'best_time' => empty($csg->best_time) ? '' : compile_str($csg->best_time));
+    $_REQUEST['csg'] = htmlspecialchars_decode($_REQUEST['csg']);
+    $_REQUEST['csg'] = stripslashes(html_entity_decode($_REQUEST['csg']));
+    $csg = $json->decode($_REQUEST['csg']);
+	$consignee = array('address_id' => empty($csg->address_id) ? 0 : intval($csg->address_id), 'consignee' => empty($csg->consignee) ? '' : compile_str(trim($csg->consignee)), 'country' => empty($csg->country) ? 0 : intval($csg->country), 'province' => empty($csg->province) ? 0 : intval($csg->province), 'city' => empty($csg->city) ? 0 : intval($csg->city), 'district' => empty($csg->district) ? 0 : intval($csg->district), 'street' => empty($csg->street) ? 0 : intval($csg->street), 'email' => empty($csg->email) ? '' : compile_str($csg->email), 'address' => empty($csg->address) ? '' : compile_str($csg->address), 'zipcode' => empty($csg->zipcode) ? '' : compile_str(make_semiangle(trim($csg->zipcode))), 'tel' => empty($csg->tel) ? '' : compile_str(make_semiangle(trim($csg->tel))), 'mobile' => empty($csg->mobile) ? '' : compile_str(make_semiangle(trim($csg->mobile))), 'sign_building' => empty($csg->sign_building) ? '' : compile_str($csg->sign_building), 'userUp_time' => $time, 'best_time' => empty($csg->best_time) ? '' : compile_str($csg->best_time),'idcard' => empty($csg->idcard) ? '' : compile_str($csg->idcard));
+    file_put_contents('log.txt', $_REQUEST['csg'], FILE_APPEND);
+    file_put_contents('log.txt', json_last_error(), FILE_APPEND);
 
-	if ($consignee) {
+
+    if ($consignee) {
 		setcookie('province', $consignee['province'], gmtime() + (3600 * 24 * 30), $GLOBALS['cookie_path'], $GLOBALS['cookie_domain']);
 		setcookie('city', $consignee['city'], gmtime() + (3600 * 24 * 30), $GLOBALS['cookie_path'], $GLOBALS['cookie_domain']);
 		setcookie('district', $consignee['district'], gmtime() + (3600 * 24 * 30), $GLOBALS['cookie_path'], $GLOBALS['cookie_domain']);

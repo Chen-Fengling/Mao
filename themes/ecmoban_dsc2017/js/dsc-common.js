@@ -2685,13 +2685,13 @@ function addUpdate_Consignee(frm){
 		csg.address 		= obj.find("[name='address']").val();
 		csg.zipcode 		= obj.find("[name='zipcode']").val();
 		csg.sign_building 	= obj.find("[name='sign_building']").val();
-		csg.best_time 		= obj.find("[name='best_time']").val();
 	}
 	
 	csg.mobile 			= obj.find("[name='mobile']").val();
 	csg.tel 			= obj.find("[name='tel']").val();
 	csg.email 			= obj.find("[name='email']").val();
 	csg.address_id 		= obj.find("[name='address_id']").val();
+    csg.idcard          = obj.find("[name='idcard']").val();
 	
 	if(csg.consignee == ''){
 		pbDialog(json_languages.input_Consignee_name,'',0);

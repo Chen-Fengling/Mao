@@ -151,6 +151,8 @@
                                     <dd>{$order.consignee|escape}</dd>
                                     <dt>{$lang.label_email}</dt>
                                     <dd>{$order.email}</dd>
+                                    <dt>身份证号</dt>
+                                    <dd>{$order.idcard}</dd>
                                 </dl>
                                 <dl>
                                     <dt>{$lang.label_tel}</dt>

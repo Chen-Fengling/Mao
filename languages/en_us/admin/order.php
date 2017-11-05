@@ -463,6 +463,7 @@ $_LANG['set_success'] = '设置完成';
 $_LANG['cannot_delete'] = '存在子退换原因，无法删除';
 $_LANG['invoice_no_null'] = '快递单号不能为空';
 $_LANG['seckill'] = '秒杀订单';
+$_LANG['idcard'] = '身份证号';
 $_LANG['split_action_note'] = '【商品货号：%s，发货：%s件】';
 
 ?>

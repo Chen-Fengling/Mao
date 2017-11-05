@@ -308,6 +308,10 @@
                                 <div class="step_label">{$lang.label_sign_building}</div>
                                 <div class="step_value"><input type="text" name="sign_building" id="sign_building" value="{$order.sign_building}" class="text" autocomplete="off" /></div>
                             </div>
+                             <div class="item">
+                                 <div class="step_label"> 身份证号：</div>
+                                 <div class="step_value"><input type="text" name="idcard" id="idcard" value="{$order.idcard}" class="text" autocomplete="off" /></div>
+                             </div>
                             <div class="item">
                                 <div class="step_label">{$lang.label_best_time}</div>
                                 <div class="step_value"><input type="text" name="best_time" id="best_time" value="{$order.best_time}" class="text" autocomplete="off" /></div>
