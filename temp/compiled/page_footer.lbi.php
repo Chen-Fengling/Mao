@@ -89,12 +89,12 @@ if ($this->_foreach['help_cat']['total'] > 0):
         <div class="w w1200">
             <?php if ($this->_var['navigator_list']['bottom']): ?> 
             <p class="copyright_links">
-                <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_66313100_1505221002');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
+                <?php $_from = $this->_var['navigator_list']['bottom']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_12749200_1509810966');$this->_foreach['nav_bottom_list'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['nav_bottom_list']['total'] > 0):
-    foreach ($_from AS $this->_var['nav_0_66313100_1505221002']):
+    foreach ($_from AS $this->_var['nav_0_12749200_1509810966']):
         $this->_foreach['nav_bottom_list']['iteration']++;
 ?>
-                <a href="<?php echo $this->_var['nav_0_66313100_1505221002']['url']; ?>" <?php if ($this->_var['nav_0_66313100_1505221002']['opennew'] == 1): ?> target="_blank" <?php endif; ?>><?php echo $this->_var['nav_0_66313100_1505221002']['name']; ?></a> 
+                <a href="<?php echo $this->_var['nav_0_12749200_1509810966']['url']; ?>" <?php if ($this->_var['nav_0_12749200_1509810966']['opennew'] == 1): ?> target="_blank" <?php endif; ?>><?php echo $this->_var['nav_0_12749200_1509810966']['name']; ?></a> 
                 <?php if (! ($this->_foreach['nav_bottom_list']['iteration'] == $this->_foreach['nav_bottom_list']['total'])): ?> 
                 | 
                 <?php endif; ?> 

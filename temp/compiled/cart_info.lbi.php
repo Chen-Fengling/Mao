@@ -11,36 +11,36 @@
     <div class="settleup-content">
         <div class="mc">
             <ul>
-                <?php $_from = $this->_var['goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_67932200_1505221002');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
+                <?php $_from = $this->_var['goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_65220900_1509810978');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['goods']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_67932200_1505221002']):
+    foreach ($_from AS $this->_var['goods_0_65220900_1509810978']):
         $this->_foreach['goods']['iteration']++;
 ?>
                 <li>		
-                    <?php if ($this->_var['goods_0_67932200_1505221002']['rec_id'] > 0): ?>
-					<?php if ($this->_var['goods_0_67932200_1505221002']['extension_code'] == 'package_buy'): ?>
+                    <?php if ($this->_var['goods_0_65220900_1509810978']['rec_id'] > 0): ?>
+					<?php if ($this->_var['goods_0_65220900_1509810978']['extension_code'] == 'package_buy'): ?>
                     <div class="p-img"><a href="javascript:void(0);"  target="_blank"><img src="themes/ecmoban_dsc2017/images/17184624079016pa.jpg" width="50" height="50" /></a></div>
 					<?php else: ?>
-					<div class="p-img"><a href="<?php echo $this->_var['goods_0_67932200_1505221002']['url']; ?>"  target="_blank"><img src="<?php echo $this->_var['goods_0_67932200_1505221002']['goods_thumb']; ?>" width="50" height="50" /></a></div>
+					<div class="p-img"><a href="<?php echo $this->_var['goods_0_65220900_1509810978']['url']; ?>"  target="_blank"><img src="<?php echo $this->_var['goods_0_65220900_1509810978']['goods_thumb']; ?>" width="50" height="50" /></a></div>
 					<?php endif; ?>
                     <?php endif; ?>
-                    <?php if ($this->_var['goods_0_67932200_1505221002']['rec_id'] > 0 && $this->_var['goods_0_67932200_1505221002']['extension_code'] == 'package_buy'): ?>
-                    <div class="p-name"><a href="javascript:void(0);"><?php echo $this->_var['goods_0_67932200_1505221002']['short_name']; ?><span style="color:#FF0000">（<?php echo $this->_var['lang']['remark_package']; ?>）</span></a></div>
-                    <?php elseif ($this->_var['goods_0_67932200_1505221002']['rec_id'] > 0 && $this->_var['goods_0_67932200_1505221002']['is_gift'] != 0): ?>
-                    <div class="p-name"><a href="javascript:void(0);"><?php echo $this->_var['goods_0_67932200_1505221002']['short_name']; ?><span style="color:#FF0000">（<?php echo $this->_var['lang']['largess']; ?>）</span></a></div>
+                    <?php if ($this->_var['goods_0_65220900_1509810978']['rec_id'] > 0 && $this->_var['goods_0_65220900_1509810978']['extension_code'] == 'package_buy'): ?>
+                    <div class="p-name"><a href="javascript:void(0);"><?php echo $this->_var['goods_0_65220900_1509810978']['short_name']; ?><span style="color:#FF0000">（<?php echo $this->_var['lang']['remark_package']; ?>）</span></a></div>
+                    <?php elseif ($this->_var['goods_0_65220900_1509810978']['rec_id'] > 0 && $this->_var['goods_0_65220900_1509810978']['is_gift'] != 0): ?>
+                    <div class="p-name"><a href="javascript:void(0);"><?php echo $this->_var['goods_0_65220900_1509810978']['short_name']; ?><span style="color:#FF0000">（<?php echo $this->_var['lang']['largess']; ?>）</span></a></div>
                     <?php else: ?>
-                    <div class="p-name"><a href="<?php echo $this->_var['goods_0_67932200_1505221002']['url']; ?>" target="_blank"><?php echo $this->_var['goods_0_67932200_1505221002']['short_name']; ?></a></div>
+                    <div class="p-name"><a href="<?php echo $this->_var['goods_0_65220900_1509810978']['url']; ?>" target="_blank"><?php echo $this->_var['goods_0_65220900_1509810978']['short_name']; ?></a></div>
                     <?php endif; ?>
                     <div class="p-number">
-                        <span class="num" id="goods_number_<?php echo $this->_var['goods_0_67932200_1505221002']['rec_id']; ?>"><?php echo empty($this->_var['goods_0_67932200_1505221002']['goods_number']) ? '1' : $this->_var['goods_0_67932200_1505221002']['goods_number']; ?></span>
+                        <span class="num" id="goods_number_<?php echo $this->_var['goods_0_65220900_1509810978']['rec_id']; ?>"><?php echo empty($this->_var['goods_0_65220900_1509810978']['goods_number']) ? '1' : $this->_var['goods_0_65220900_1509810978']['goods_number']; ?></span>
                         <div class="count">
-                            <a href="javascript:void(0);"  id="min_number" onclick="changenum(<?php echo $this->_var['goods_0_67932200_1505221002']['rec_id']; ?>,1, <?php echo $this->_var['goods_0_67932200_1505221002']['warehouse_id']; ?>, <?php echo $this->_var['goods_0_67932200_1505221002']['area_id']; ?>)" class="count-add"><i class="iconfont icon-up"></i></a>
-                            <a href="javascript:void(0);" onclick="changenum(<?php echo $this->_var['goods_0_67932200_1505221002']['rec_id']; ?>, -1, <?php echo $this->_var['goods_0_67932200_1505221002']['warehouse_id']; ?>, <?php echo $this->_var['goods_0_67932200_1505221002']['area_id']; ?>)" class="count-remove"><i class="iconfont icon-down"></i></a>
+                            <a href="javascript:void(0);"  id="min_number" onclick="changenum(<?php echo $this->_var['goods_0_65220900_1509810978']['rec_id']; ?>,1, <?php echo $this->_var['goods_0_65220900_1509810978']['warehouse_id']; ?>, <?php echo $this->_var['goods_0_65220900_1509810978']['area_id']; ?>)" class="count-add"><i class="iconfont icon-up"></i></a>
+                            <a href="javascript:void(0);" onclick="changenum(<?php echo $this->_var['goods_0_65220900_1509810978']['rec_id']; ?>, -1, <?php echo $this->_var['goods_0_65220900_1509810978']['warehouse_id']; ?>, <?php echo $this->_var['goods_0_65220900_1509810978']['area_id']; ?>)" class="count-remove"><i class="iconfont icon-down"></i></a>
                         </div>
                     </div>
                     <div class="p-oper">
-                        <div class="price"><?php echo $this->_var['goods_0_67932200_1505221002']['goods_price']; ?></div>
-                        <a href="javascript:void(0);" onClick="deleteCartGoods(<?php echo $this->_var['goods_0_67932200_1505221002']['rec_id']; ?>,0)" class="remove"><?php echo $this->_var['lang']['drop']; ?></a>
+                        <div class="price"><?php echo $this->_var['goods_0_65220900_1509810978']['goods_price']; ?></div>
+                        <a href="javascript:void(0);" onClick="deleteCartGoods(<?php echo $this->_var['goods_0_65220900_1509810978']['rec_id']; ?>,0)" class="remove"><?php echo $this->_var['lang']['drop']; ?></a>
                     </div>
                 </li>
                 <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>

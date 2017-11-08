@@ -7,18 +7,18 @@
 	<div class="mc">
 		<div class="mc-warp" id="history_list">
 			<ul>
-				<?php $_from = $this->_var['history_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_50208400_1509031929');if (count($_from)):
-    foreach ($_from AS $this->_var['goods_0_50208400_1509031929']):
+				<?php $_from = $this->_var['history_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_87171700_1510143258');if (count($_from)):
+    foreach ($_from AS $this->_var['goods_0_87171700_1510143258']):
 ?>
 				<li>
-					<div class="p-img"><a href="<?php echo $this->_var['goods_0_50208400_1509031929']['url']; ?>" target="_blank" title="<?php echo htmlspecialchars($this->_var['goods_0_50208400_1509031929']['goods_name']); ?>"><img src="<?php echo $this->_var['goods_0_50208400_1509031929']['goods_thumb']; ?>" width="170" height="170"></a></div>
-                    <div class="p-name"><a href="<?php echo $this->_var['goods_0_50208400_1509031929']['url']; ?>" target="_blank"><?php echo $this->_var['goods_0_50208400_1509031929']['short_name']; ?></a></div>
+					<div class="p-img"><a href="<?php echo $this->_var['goods_0_87171700_1510143258']['url']; ?>" target="_blank" title="<?php echo htmlspecialchars($this->_var['goods_0_87171700_1510143258']['goods_name']); ?>"><img src="<?php echo $this->_var['goods_0_87171700_1510143258']['goods_thumb']; ?>" width="170" height="170"></a></div>
+                    <div class="p-name"><a href="<?php echo $this->_var['goods_0_87171700_1510143258']['url']; ?>" target="_blank"><?php echo $this->_var['goods_0_87171700_1510143258']['short_name']; ?></a></div>
 					<div class="p-lie">
 						<div class="p-price">
 							<?php if ($this->_var['releated_goods_data']['promote_price'] != ''): ?>
-								<?php echo $this->_var['goods_0_50208400_1509031929']['formated_promote_price']; ?>
+								<?php echo $this->_var['goods_0_87171700_1510143258']['formated_promote_price']; ?>
 							<?php else: ?>
-								<?php echo $this->_var['goods_0_50208400_1509031929']['shop_price']; ?>
+								<?php echo $this->_var['goods_0_87171700_1510143258']['shop_price']; ?>
 							<?php endif; ?>
 						</div>
 					</div>

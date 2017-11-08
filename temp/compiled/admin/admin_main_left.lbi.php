@@ -6,11 +6,11 @@
             </div>
         </div>
 
-        <?php $_from = $this->_var['nav_top']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_33639200_1505355858');if (count($_from)):
-    foreach ($_from AS $this->_var['nav_0_33639200_1505355858']):
+        <?php $_from = $this->_var['nav_top']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'nav_0_69329600_1509811050');if (count($_from)):
+    foreach ($_from AS $this->_var['nav_0_69329600_1509811050']):
 ?>
-        <div class="navLeftTab" id="adminNavTabs_<?php echo $this->_var['nav_0_33639200_1505355858']['type']; ?>" style="display:none;">
-            <?php $_from = $this->_var['nav_0_33639200_1505355858']['children']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'menu');$this->_foreach['foo'] = array('total' => count($_from), 'iteration' => 0);
+        <div class="navLeftTab" id="adminNavTabs_<?php echo $this->_var['nav_0_69329600_1509811050']['type']; ?>" style="display:none;">
+            <?php $_from = $this->_var['nav_0_69329600_1509811050']['children']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('k', 'menu');$this->_foreach['foo'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['foo']['total'] > 0):
     foreach ($_from AS $this->_var['k'] => $this->_var['menu']):
         $this->_foreach['foo']['iteration']++;
@@ -26,7 +26,7 @@ if ($this->_foreach['childfoo']['total'] > 0):
     foreach ($_from AS $this->_var['key'] => $this->_var['child']):
         $this->_foreach['childfoo']['iteration']++;
 ?>
-                        <li <?php if (($this->_foreach['childfoo']['iteration'] <= 1)): ?>class="curr"<?php endif; ?>><s></s><a href="javascript:void(0);" data-url="<?php echo $this->_var['child']['action']; ?>" data-param="<?php echo $this->_var['nav_0_33639200_1505355858']['type']; ?>|<?php echo $this->_var['key']; ?>" target="workspace"><?php echo $this->_var['child']['label']; ?></a></li>
+                        <li <?php if (($this->_foreach['childfoo']['iteration'] <= 1)): ?>class="curr"<?php endif; ?>><s></s><a href="javascript:void(0);" data-url="<?php echo $this->_var['child']['action']; ?>" data-param="<?php echo $this->_var['nav_0_69329600_1509811050']['type']; ?>|<?php echo $this->_var['key']; ?>" target="workspace"><?php echo $this->_var['child']['label']; ?></a></li>
                         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                     </ul>
                 </div>

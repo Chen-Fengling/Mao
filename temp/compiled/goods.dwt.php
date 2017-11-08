@@ -462,19 +462,19 @@ if ($this->_foreach['attrvalues']['total'] > 0):
                     	<div class="track-tit"><h3>看了又看</h3><span></span></div>
                         <div class="track-con">
                             <ul>
-                                <?php $_from = $this->_var['see_more_goods']['goods_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_35607000_1509031929');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
+                                <?php $_from = $this->_var['see_more_goods']['goods_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods_0_76071000_1510143258');$this->_foreach['goods'] = array('total' => count($_from), 'iteration' => 0);
 if ($this->_foreach['goods']['total'] > 0):
-    foreach ($_from AS $this->_var['goods_0_35607000_1509031929']):
+    foreach ($_from AS $this->_var['goods_0_76071000_1510143258']):
         $this->_foreach['goods']['iteration']++;
 ?>
                                 <li>
-                                    <div class="p-img"><a href="<?php echo $this->_var['goods_0_35607000_1509031929']['url']; ?>" target="_blank" title="<?php echo $this->_var['goods_0_35607000_1509031929']['goods_name']; ?>"><img src="<?php echo $this->_var['goods_0_35607000_1509031929']['goods_thumb']; ?>" width="140" height="140"></a></div>
-                                    <div class="p-name"><a href="<?php echo $this->_var['goods_0_35607000_1509031929']['url']; ?>" target="_blank" title="<?php echo $this->_var['goods_0_35607000_1509031929']['goods_name']; ?>"><?php echo $this->_var['goods_0_35607000_1509031929']['goods_name']; ?></a></div>
+                                    <div class="p-img"><a href="<?php echo $this->_var['goods_0_76071000_1510143258']['url']; ?>" target="_blank" title="<?php echo $this->_var['goods_0_76071000_1510143258']['goods_name']; ?>"><img src="<?php echo $this->_var['goods_0_76071000_1510143258']['goods_thumb']; ?>" width="140" height="140"></a></div>
+                                    <div class="p-name"><a href="<?php echo $this->_var['goods_0_76071000_1510143258']['url']; ?>" target="_blank" title="<?php echo $this->_var['goods_0_76071000_1510143258']['goods_name']; ?>"><?php echo $this->_var['goods_0_76071000_1510143258']['goods_name']; ?></a></div>
                                     <div class="price">
-                                        <?php if ($this->_var['goods_0_35607000_1509031929']['promote_price'] != ''): ?>
-                                            <?php echo $this->_var['goods_0_35607000_1509031929']['promote_price']; ?>
+                                        <?php if ($this->_var['goods_0_76071000_1510143258']['promote_price'] != ''): ?>
+                                            <?php echo $this->_var['goods_0_76071000_1510143258']['promote_price']; ?>
                                         <?php else: ?>
-                                            <?php echo $this->_var['goods_0_35607000_1509031929']['shop_price']; ?>
+                                            <?php echo $this->_var['goods_0_76071000_1510143258']['shop_price']; ?>
                                         <?php endif; ?>										
                                     </div>
                                 </li>
@@ -842,10 +842,10 @@ if ($this->_foreach['noproperty']['total'] > 0):
                                 <?php endif; ?>
                                 <?php if ($this->_var['extend_info']): ?>
                                 <dl class="goods-para">
-                                    <?php $_from = $this->_var['extend_info']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'info_0_35762600_1509031929');if (count($_from)):
-    foreach ($_from AS $this->_var['key'] => $this->_var['info_0_35762600_1509031929']):
+                                    <?php $_from = $this->_var['extend_info']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('key', 'info_0_76471000_1510143258');if (count($_from)):
+    foreach ($_from AS $this->_var['key'] => $this->_var['info_0_76471000_1510143258']):
 ?>	
-                                    <dd class="column"><span title="<?php echo htmlspecialchars($this->_var['info_0_35762600_1509031929']); ?>"><?php echo $this->_var['key']; ?>：<?php echo htmlspecialchars($this->_var['info_0_35762600_1509031929']); ?></span></dd>
+                                    <dd class="column"><span title="<?php echo htmlspecialchars($this->_var['info_0_76471000_1510143258']); ?>"><?php echo $this->_var['key']; ?>：<?php echo htmlspecialchars($this->_var['info_0_76471000_1510143258']); ?></span></dd>
                                     <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                                 </dl>
                                 <?php endif; ?>
