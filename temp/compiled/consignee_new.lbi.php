@@ -5,7 +5,7 @@
             <div class="form-value">
                 <input type="text" class="form-input" value="<?php echo $this->_var['consignee']['consignee']; ?>" maxlength="8" name="consignee" id="consignee_name" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')">
                 <span class="fl"><?php echo $this->_var['lang']['consignee_IDCard_Number']; ?>：</span>
-                <input type="text" class="form-input" maxlength="18" value="<?php echo $this->_var['consignee']['IDCard']; ?>" name="IDCard" id="consignee_IDCard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+                <input type="text" class="form-input" maxlength="18" value="<?php echo $this->_var['consignee']['idcard']; ?>" name="IDCard" id="consignee_IDCard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
                 <span id="consigneeIdCardlNote" class="status error hide"><?php echo $this->_var['lang']['input_IDCard']; ?></span>
             </div>
         </div>
@@ -42,10 +42,10 @@
                     </dt>
                     <dd ectype="layer">
                         <div class="option" data-value="0"><?php echo $this->_var['please_select']; ?><?php echo $this->_var['name_of_region']['1']; ?></div>
-                        <?php $_from = $this->_var['province_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'province_0_70023600_1509037328');if (count($_from)):
-    foreach ($_from AS $this->_var['province_0_70023600_1509037328']):
+                        <?php $_from = $this->_var['province_list']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'province_0_90080500_1510143277');if (count($_from)):
+    foreach ($_from AS $this->_var['province_0_90080500_1510143277']):
 ?>
-                        <div class="option" data-value="<?php echo $this->_var['province_0_70023600_1509037328']['region_id']; ?>" data-text="<?php echo $this->_var['province_0_70023600_1509037328']['region_name']; ?>" data-type="2" ectype="ragionItem"><?php echo $this->_var['province_0_70023600_1509037328']['region_name']; ?></div>
+                        <div class="option" data-value="<?php echo $this->_var['province_0_90080500_1510143277']['region_id']; ?>" data-text="<?php echo $this->_var['province_0_90080500_1510143277']['region_name']; ?>" data-type="2" ectype="ragionItem"><?php echo $this->_var['province_0_90080500_1510143277']['region_name']; ?></div>
                         <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
                     </dd>
                 </dl>
