@@ -6,7 +6,7 @@
             <div class="form-value">
                 <input type="text" class="form-input" value="{$consignee.consignee}" maxlength="8" name="consignee" id="consignee_name" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5]/g,'')">
                 <span class="fl">{$lang.consignee_IDCard_Number}：</span>
-                <input type="text" class="form-input" maxlength="18" value="{$consignee.IDCard}" name="IDCard" id="consignee_IDCard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
+                <input type="text" class="form-input" maxlength="18" value="{$consignee.idcard}" name="idcard" id="consignee_IDCard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')">
                 <span id="consigneeIdCardlNote" class="status error hide">{$lang.input_IDCard}</span>
             </div>
         </div>
